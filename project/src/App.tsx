@@ -32,7 +32,7 @@ function App() {
             
             <div className="flex justify-center mb-12">
               <img 
-                src="/project/public/image.png" 
+                src="/image.png" 
                 alt="Mentora" 
                 className="w-32 h-32 rounded-full border-4 border-amber-400 shadow-2xl object-cover"
               />
