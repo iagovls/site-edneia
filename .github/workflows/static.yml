@@ -32,9 +32,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: project
 
       - name: Build site
         run: npm run build
+        working-directory: project
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -42,7 +44,7 @@ jobs:
       - name: Upload dist folder
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: project/dist  # ← aponto para a pasta correta dentro de 'project/'
 
       - name: Deploy to GitHub Pages
         id: deployment
